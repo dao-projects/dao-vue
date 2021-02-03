@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server --open"
+    "serve": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

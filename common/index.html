@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test dao-vue</title>
+    <style type="text/css">
+        *{
+            text-align: center;
+        }
+        div{
+            margin-bottom: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h2>User Info: {{user.name}} ,{{user.age}}</h2>
+        <div>
+           [v-text='user.name'] =><span v-text='user.name'></span>
+        </div>
+        <div>
+           [v-text='textStr'] =><span v-text='textStr'></span>
+        </div>
+        <div>
+           [v-html='htmlStr'] =><span v-html='htmlStr'></span>
+        </div>
+
+        <div>{{arr}}</div>
+        <div>{{modelStr}}</div>
+        <div>
+                name：<input type="text" v-model='modelStr'>
+        </div>
+        <div>
+            <button v-on:click="handleClick">click me [v-on:click]</button>
+        </div>
+        <div>
+            <button @click="handleClick">click me [@click]</button>
+        </div>
+        <div>
+            <a v-bind:href="href">click me [v-bind:href="href"]</a>
+            <br>
+            <a :href="href">click me [:href="href"]</a>
+        </div>
+    </div>
+<script src="index.js"></script></body>
+
+</html>
